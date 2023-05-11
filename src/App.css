@@ -1,2 +1,16 @@
-
+@font-face {
+    font-family:"Jost regular" ;
+    src: url(./fonts/Jost-Regular.ttf);
+  };
+  
+  body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  }
+  .brand-logo{
+    font-family:"Jost regular" ;
+    margin-left: 40px;
+  }
 

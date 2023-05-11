@@ -2,7 +2,6 @@ import CartWidget from "./CartWidget"
 const NavBar =()=>{
     return(
         <div>
-            
   <nav>
     <div class="nav-wrapper grey darken-4">
       <a href="#" class="brand-logo">NORDIC HOME</a>

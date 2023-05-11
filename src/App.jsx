@@ -6,7 +6,7 @@ import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <NavBar/>
       <ItemListContainer greeting={"Estilo y calidad en tu hogar"}/>
       
