@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+import 'materialize-css/dist/css/materialize.min.css'
 import './App.css';
+import NavBar from './components/NavBar';
+import ItemListContainer from './components/ItemListContainer'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <NavBar/>
+      <ItemListContainer greeting={"Estilo y calidad en tu hogar"}/>
+      
     </div>
   );
 }
