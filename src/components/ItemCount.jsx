@@ -1,6 +1,6 @@
-import { useState } from "react"
+import { useState } from "react";
 
-const itemCount =({stock,initial,onAdd})=>{
+const ItemCount =({stock,initial,onAdd})=>{
     const [quantity,setQuantity]=useState(initial)
      const increment =()=>{
 
@@ -15,31 +15,35 @@ const itemCount =({stock,initial,onAdd})=>{
      }
     
      return (
-        <div className ='Counter'>
-            <div className="Controls">
-            <a class="waves-effect waves-light btn" onClick={decrement}>button</a>
+        <div className ='container'>
+            <div className="row">
+                <div className="col s">
+                <a class="waves-effect waves-light btn orange accent-2 " onClick={decrement}>-</a>
+                </div>
+            
+                <div className="col s">
+                <h4>{quantity}</h4>
+                </div>
+                <div className="col s">
+                <a class="waves-effect waves-light btn orange accent-2" onClick={increment}>+</a>
+                </div>
+           
             </div>
-            <h4></h4>
+            <div className="row">
+                <div className="col s">
+                <a class="waves-effect waves-light btn orange accent-2" onClick={()=> onAdd(quantity)} disabled ={!stock}>
+            Agregar al carrito
+            </a>
+                </div>
+          
+
+            </div>
+           
         </div>
      )
     
-    
-    
-    
-    
-    return (
-
-    )
 }
 
 
 
-
-
-
-
-
-
-export default{
-
-}
+export default ItemCount
