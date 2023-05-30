@@ -1,8 +1,8 @@
-const Item = ({id,nombre,img,precio,stock})=>{
+import ItemCount from './ItemCount'
 
-        return (
-            <div className="container">
-            <div className="row">
+const ItemDetail = ({id,nombre,img,precio,categoria,stock,descripcion})=>{
+    return (
+        <div className="row">
             <div className="col s4">
               <div className="card medium">
                 <div className="card-image">
@@ -10,16 +10,18 @@ const Item = ({id,nombre,img,precio,stock})=>{
                 </div>
                 <span className="card-title">{nombre}</span>
                 <div className="card-content">
+                  <p> Categoría: {categoria}</p>
                   <p>Precio:$ {precio}</p>
                   <p>Cantidad en stock: {stock}</p>
                 </div>
-                <a className="btn-floating btn-large waves-effect waves-orange accent-2"><i class="material-icons">+</i></a>
+                <div> 
+                <ItemCount  initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada',quantity)}/>
+                </div>
+                
               </div>
             </div>
           </div>
-          </div>
-        )
-        
-
+    )
 }
-export default Item
+
+export default ItemDetail
