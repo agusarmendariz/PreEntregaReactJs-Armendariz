@@ -13,7 +13,11 @@ const Item = ({id,nombre,img,precio,stock})=>{
                   <p>Precio:$ {precio}</p>
                   <p>Cantidad en stock: {stock}</p>
                 </div>
-                <a className="btn-floating btn-large waves-effect waves-orange accent-2"><i class="material-icons">+</i></a>
+                <div className="link">
+                <Link to = {'/item/${id}'} >Ver detalle</Link>
+                </div>
+                
+                
               </div>
             </div>
           </div>
