@@ -1,7 +1,8 @@
 import CartWidget from "./CartWidget"
+import {NavLink, Link} from 'react-router-dom'
 const NavBar =()=>{
     return(
-        <div>
+  <div>
   <nav>
     <div class="nav-wrapper grey darken-4">
       <a href="#" class="brand-logo">NORDIC HOME</a>
