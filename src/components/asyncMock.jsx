@@ -4,7 +4,7 @@ const productos = [
         nombre:"Silla nordica negra",
         precio:10000,
         categoria:"silla",
-        img:'./src/images/silla nordica negra.jpg',
+        img:'../images/silla nordica negra.jpg',
         stock:100,
         descripcion:"Silla estilo nordico color negro"
     },
@@ -14,17 +14,17 @@ const productos = [
         nombre:"Silla nordica blanca",
         precio:10000,
         categoria:"silla",
-        img:'./src/images/silla nordica blanca.jpg',
+        img:'../images/silla nordic blanca.jpg',
         stock:100,
         descripcion:"Silla estilo nordico color blanco"
     },
 
     {
         id:"3",
-        nombre:"Mesa nordica negra",
+        nombre:"Mesa nordica blanca",
         precio:60000,
         categoria:"mesa",
-        img:'./src/images/mesa nordica.jpg',
+        img:'../images/mesa nordica.jpg',
         stock:100,
         descripcion:"Mesa estilo nordico color blanco"
     }

@@ -12,7 +12,7 @@ const {id}= useParams()
 useEffect(()=>{
     const asynFunc = id ? getProductsById : getProducts
     
-    asynFunc(categoryId)
+    asynFunc(id)
     .then(response => {
         setProducts(response)
     })

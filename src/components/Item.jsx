@@ -1,7 +1,10 @@
+import {Link} from 'react-router-dom'
+
+
 const Item = ({id,nombre,img,precio,stock})=>{
 
         return (
-            <div className="container">
+         <div className="container">
             <div className="row">
             <div className="col s4">
               <div className="card medium">
@@ -13,15 +16,13 @@ const Item = ({id,nombre,img,precio,stock})=>{
                   <p>Precio:$ {precio}</p>
                   <p>Cantidad en stock: {stock}</p>
                 </div>
-                <div className="link">
-                <Link to = {'/item/${id}'} >Ver detalle</Link>
-                </div>
-                
-                
-              </div>
+                <Link to= {"/item/" + id}>
+                <a class="waves-effect waves-light btn">Ver producto</a>
+              </Link>
             </div>
           </div>
           </div>
+        </div>
         )
         
 
