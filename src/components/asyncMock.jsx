@@ -35,7 +35,7 @@ export const getProducts = () => {
     return new Promise ((resolve) =>{
         setTimeout(() =>{
             resolve(productos)
-        }, 500)
+        }, 1500)
     })
 }
 
@@ -43,6 +43,6 @@ export const getProductsById = (productId) => {
     return new Promise ((resolve) =>{
         setTimeout(() =>{
             resolve(productos.find (prod => prod.id ===productId))
-        }, 500)
+        }, 1500)
     })
 }
